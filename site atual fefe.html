@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FM Store - Loja de Tênis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #000000;
+            color: #000000;
+        }
+
+        header {
+            background: #000000;
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #000000;
+            color: #fff;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            margin-right: 8rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 2rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .search-bar {
+            margin-right: auto;
+            margin-left: 8rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .search-bar input {
+            padding: 0.5rem;
+            border: 1px solid #ffffff;
+            border-radius: 15px;
+            width: 400px;
+        }
+
+        .search-bar button {
+            background: #313131;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        .search-bar button:hover {
+            background: #2e2e2e;
+        }
+
+        .hero {
+            background-color: black;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000000;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            height: 10vh;
+            max-width: 1200px;
+            margin: 0rem;
+            margin-left: 50rem;
+            margin-top: 10rem;
+        }
+
+        .products {
+            margin-left: 11rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            width: 1500px;
+        }
+
+        .product {
+            background: #0a0a0a;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 1rem 0;
+            font-size: 1.25rem;
+        }
+
+        .product p {
+            color: #000000;
+            margin-bottom: 1rem;
+        }
+
+        .product button {
+            background: #222;
+            color: #ffffff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .product button:hover {
+            background: #000000;
+        }
+
+        footer {
+            background: #050505;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="IMGS/logo.jpg" alt="Logo da loja"><!--logo-->
+        <p>A melhor loja de tênis online!</p>
+    </header>
+
+    <nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar produtos...">
+            <button>Buscar</button>
+        </div>
+        <a href="#">Início</a>
+        <a href="#produtos">Marcas</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="hero">
+        <img src="IMGS/envio para franca.jpg" alt="">
+    </section>
+
+    <div class="container" id="produtos">
+        <h2 style="color: #ffffff;">Selecione sua marca preferida !</h2>
+        <div class="products">
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <img src="IMGS/niek.jpg"Tênis 1">
+            <h3>NIKE</h3>
+            <button>Acessar</button>
+        </div>
+        <div class="product">
+            <img src="IMGS/adidas.jpg" alt="Tênis 2">
+            <h3>Adidas</h3>
+            <button>Acessar</button>
+        </div>
+        <div class="product">
+            <img src="IMGS/fefe.jpg" alt="Tênis 3">
+            <h3>Mizuno</h3>
+            <button>Acessar</button>
+            
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <img src="IMGS/louis.jpg" alt="Tênis 1">
+            <h3>Louis Vuitton</h3>
+            <button>Acessar</button>
+        </div>
+        <div class="product">
+            <img src="IMGS/new balance.jpg" alt="Tênis 2">
+            <h3>New balance</h3>
+            <button>Acessar</button>
+        </div>
+        <div class="product">
+            <img src="IMGS/kenner.jpg" alt="Tênis 3">
+            <h3>Kenner</h3>
+            <button>Acessar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>FM Store &copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
